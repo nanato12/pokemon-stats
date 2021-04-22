@@ -4,7 +4,7 @@ run:
 	pipenv shell pipenv install
 
 exec:
-	python main.py
+	python sample.py
 
 black:
 	black ./
