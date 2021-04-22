@@ -5,10 +5,10 @@ from dataclasses import dataclass
 class Pokemon:
     number: int
     name: str
-    hp: int
-    attack: int
-    block: int
-    contact: int
-    defence: int
-    speed: int
+    H: int
+    A: int
+    B: int
+    C: int
+    D: int
+    S: int
     total: int
