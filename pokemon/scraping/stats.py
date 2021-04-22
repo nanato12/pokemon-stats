@@ -13,7 +13,9 @@ class ScrapStats:
     pokemons: List[Pokemon]
 
     def __init__(self) -> None:
-        res = requests.get(urljoin(Config.HOST, Config.PATH_STATS_LIST))
+        res = requests.get(
+            urljoin(Config.HOST, Config.PATH_STATS_LIST), {"mode": "all"}
+        )
         self.soup = BeautifulSoup(res.content, "html.parser")
         self._get()
 
