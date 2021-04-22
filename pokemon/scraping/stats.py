@@ -4,6 +4,7 @@ from urllib.parse import urljoin
 import requests
 from bs4 import BeautifulSoup
 from bs4.element import Tag
+
 from ..consts import Config
 from ..objects import Pokemon
 
@@ -31,4 +32,4 @@ class ScrapStats:
                 else:
                     data.append(text)
 
-            self.pokemons.append(Pokemon(*data))
+            self.pokemons.append(Pokemon(*data))  # type:ignore
